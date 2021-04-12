@@ -1,3 +1,3 @@
 # CS-361-Project
-# test commit
+# Test Commit
 Repository for CS 361 group project
