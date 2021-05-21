@@ -4,3 +4,5 @@ Welcome to the WikiScraper
 2. use 'pip install -r requirements.txt' to install all required dependencies.
 3. run 'flask run'
 4. enjoy.
+
+or just go to https://wikiscrap3r.herokuapp.com/
