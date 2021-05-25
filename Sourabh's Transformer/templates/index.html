@@ -1,0 +1,64 @@
+<style>
+
+  h1{
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  input{
+    text-align: center;
+  }
+  .content{
+    margin-left: 550px;
+  }
+</style>
+
+<script>
+  function myFunction() {
+    alert("This Software Goes Through text given by a wikipedia scrapper and condenses it so that words less than your inputted values are shown\nInstructions\n1.Input a number(represenets the min value of letters in a word)\n2.Click Submit To Filter Words\n3.View the Before and After Texts\nGo through steps 1-3 if you would like to rerun functions.");
+  }
+
+  function shareFunction(results) {
+    alert("Sharing Results With Scraper App\nOld were a band from");
+  }
+  </script>
+  
+
+<html>
+  <body style="background-color:#7393B3;">
+    <h1>Transformer App</h1>
+    <h1>_____________________</h1>
+    <p>This service gets text from Willy's wikipedia scraper and transforms it into text containing words less than or equal to your inputted value</p>
+    <p>Benefits: With this service you can take enlarged texts and condense it based on your personal preference</p>
+    <p>Disclaimer: Condensed texts can be innacraute portryals of original text</p>
+  <title> Transformer </title> 
+  <form method="POST"> 
+    <div class='centerContent'>
+    <h1>Text From Willy's Scraper: </h1>
+    <h2>{{beforeText | safe}}</h2>
+    <div class="content">
+    <label> Word Length: </label>
+    <input type="text" name="textbox" value = {{user_text | safe}}> 
+    <button type="submit" name="submit">Submit</button>
+    <button type="submit" name="submit" onclick="myFunction()" >Help</button>
+    <button type="submit" name="submit" onclick="shareFunction()" >Share Results</button>
+
+  </div>
+  </div>
+
+
+    <h1></h1>
+    <h3> Before Text: </h3>
+    <label> {{beforeText | safe}} </label> <br>
+
+    <h1></h1>
+    <h3> After Text: </h3>
+    <label> {{afterText | safe}} </label> <br>
+    
+  </form>
+</body>
+</html>
