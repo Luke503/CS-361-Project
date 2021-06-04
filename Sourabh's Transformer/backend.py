@@ -3,23 +3,17 @@ def listToString(s):
      
     for ele in s: 
         str1 += ele 
-        str1 += ' ' 
+        str1 += ' ' #this line provides the space between each word in final output
     
     return str1 
 
 
 def findAndReplace(beforeText,numLength):
     finalArray = []
-
-    print(beforeText)
     newText = beforeText.split(' ')
-    print(newText)
 
     for x in newText:
-        print(x)
         if len(x) <= int(numLength):
             finalArray.append(x)
 
-    print('DONE')
-    print(finalArray)
     return listToString(finalArray)
